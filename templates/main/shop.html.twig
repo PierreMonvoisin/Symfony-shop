@@ -1,20 +1,77 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}This is the shop.{% endblock %}
+{% block title %}Shop - symphony{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Welcome to the shop ! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/home/pierre/www/training/symphony/SymphonyTest/src/Controller/MainController.php'|file_link(0) }}">src/Controller/MainController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/home/pierre/www/training/symphony/SymphonyTest/templates/main/shop.html.twig'|file_link(0) }}">templates/main/shop.html.twig</a></code></li>
-    </ul>
+<div class="container py-4">
+    <h1 class="text-info w-100 text-center font-weight-bold">Anything for your thirst and hunger !</h1>
+    <h2 class="text-dark w-100 text-center">Everything you want, from the shake to the burger.</h2>
+</div>
+<div class="container py-3">
+    <h2 class="text-warning w-100 text-center font-weight-bold">Food</h2>
+</div>
+<div class="container-fluid d-flex flex-wrap justify-content-around">
+    <div class="card mt-4" style="max-width: 30vw;">
+        <div class="card-header text-center">Product</div>
+        <div class="card-body">
+            <h4 class="card-title">Name of the product</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    <div class="card mt-4" style="max-width: 30vw;">
+        <div class="card-header text-center">Product</div>
+        <div class="card-body">
+            <h4 class="card-title">Name of the product</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    <div class="card mt-4" style="max-width: 30vw;">
+        <div class="card-header text-center">Product</div>
+        <div class="card-body">
+            <h4 class="card-title">Name of the product</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    <div class="card mt-4" style="max-width: 30vw;">
+        <div class="card-header text-center">Product</div>
+        <div class="card-body">
+            <h4 class="card-title">Name of the product</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    <div class="card mt-4" style="max-width: 30vw;">
+        <div class="card-header text-center">Product</div>
+        <div class="card-body">
+            <h4 class="card-title">Name of the product</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+</div>
+<hr class="bg-dark my-4">
+<div class="container py-3">
+    <h2 class="text-warning w-100 text-center font-weight-bold">Drinks</h2>
+</div>
+<div class="container-fluid d-flex flex-wrap justify-content-around">
+    <div class="card mt-4" style="max-width: 30vw;">
+        <div class="card-header text-center">Product</div>
+        <div class="card-body">
+            <h4 class="card-title">Name of the product</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    <div class="card mt-4" style="max-width: 30vw;">
+        <div class="card-header text-center">Product</div>
+        <div class="card-body">
+            <h4 class="card-title">Name of the product</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    <div class="card mt-4" style="max-width: 30vw;">
+        <div class="card-header text-center">Product</div>
+        <div class="card-body">
+            <h4 class="card-title">Name of the product</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
 </div>
 {% endblock %}
