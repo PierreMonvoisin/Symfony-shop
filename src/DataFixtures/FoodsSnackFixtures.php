@@ -10,11 +10,11 @@ class FoodsSnackFixtures extends Fixture
 {
     public function load(ObjectManager $manager)
     {
-        for ($i = 0; $i <= 10; $i++){
+        for ($i = 1; $i <= 10; $i++){
             $foodsSnack = new FoodsSnack();
 
-            $foodsSnack->setTitle("Titre de l'article $i")
-                        ->setDescription("<p>Ceci est la description numéro $i du même article.</p>")
+            $foodsSnack->setTitle("Snack n°$i")
+                        ->setDescription("Ceci est la description numéro $i du même article.")
                         ->setPrice(rand(4,20))
                         ->setImage("http://placehold.it/300x300");
 

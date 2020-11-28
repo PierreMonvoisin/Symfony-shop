@@ -10,11 +10,11 @@ class DrinksSodaFixtures extends Fixture
 {
     public function load(ObjectManager $manager)
     {
-        for ($i = 0; $i <= 10; $i++){
+        for ($i = 1; $i <= 10; $i++){
             $drinksSoda = new DrinksSoda();
 
-            $drinksSoda->setTitle("Titre de l'article $i")
-                        ->setDescription("<p>Ceci est la description numéro $i du même article.</p>")
+            $drinksSoda->setTitle("Soda n°$i")
+                        ->setDescription("Ceci est la description numéro $i du même article.")
                         ->setPrice(rand(3,20))
                         ->setImage("http://placehold.it/300x300");
 
