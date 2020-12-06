@@ -34,4 +34,15 @@ class MainController extends AbstractController
             'foodsSnack' => $foodsSnack
         ]);
     }
+
+    /**
+     * @Route("/shop/{name}_{id}", name="article")
+     */
+    public function showArticle($name, $id){
+        $articleRepo = $this->getDoctrine()->getRepository("App\Entity\\" . $name);
+        $article = $articleRepo->find($id);
+        return $this->render('main/articleDisplay.html.twig', [
+            'article' => $article
+        ]);
+    }
 }

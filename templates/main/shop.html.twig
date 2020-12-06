@@ -15,9 +15,12 @@
         <div class="card mt-4" style="max-width: 30vw;">
             <div class="card-header text-center">{{ snack.title }}</div>
             <div class="card-body text-center">
-                <p class="card-text text-right font-weight-bold">{{ snack.price }} €</p>      
+                <p class="card-text text-right font-weight-bold" style="font-size: 125%;">{{ snack.price }} €</p>      
                 <p class="card-text py-2">{{ snack.description }}</p>
-                <img src="{{ snack.image }}" alt="snack representation">
+                <img src="{{ snack.image }}" style="border-radius: 0.25rem;" alt="snack representation">
+            </div>
+            <div class="card-footer">
+                <a href="shop/FoodsSnack_{{ snack.id }}" class="btn btn-block btn-dark" style="border-radius: 0.25rem;">Commander !</a>
             </div>
         </div>
     {% endfor %}
@@ -31,9 +34,12 @@
         <div class="card mt-4" style="max-width: 30vw;">
             <div class="card-header text-center">{{ soda.title }}</div>
             <div class="card-body text-center">
-                <img src="{{ soda.image }}" alt="soda representation">
+                <img src="{{ soda.image }}" style="border-radius: 0.25rem;" alt="soda representation">
                 <p class="card-text py-3">{{ soda.description }}</p>
                 <p class="card-text text-right font-weight-bold">{{ soda.price }} €</p>
+            </div>
+            <div class="card-footer">
+                <a href="shop/DrinksSoda_{{ soda.id }}" class="btn btn-block btn-dark" style="border-radius: 0.25rem;">Commander !</a>
             </div>
         </div>
     {% endfor %}
