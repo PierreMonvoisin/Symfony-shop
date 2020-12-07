@@ -3,15 +3,12 @@
 {% block title %}Article - symphony{% endblock %}
 
 {% block body %}
-<div class="container py-3">
+<div class="container py-3" style="padding-top: 15vh !important;">
   <h1 class="text-white text-center font-weight-bold">{{ article.title }}</h1>
 </div>
 <div style="font-size: 125%;" class="jumbotron mx-5 px-5 d-flex justify-content-around text-center">
   <img style="font-size: 125%;" src="{{ article.image }}" alt="article display">
   <p style="font-size: 140%;" class="my-auto">{{ article.description }}</p>
   <p style="font-size: 120%;" class="mt-auto font-weight-bolder">{{ article.price }} €</p>
-</div>
-<div class="container">
-  <a href='#' class="btn-block btn btn-light">Commander !</a>
 </div>
 {% endblock %}
